@@ -36,9 +36,9 @@ names = ["Home"]
 # =============================================================================
 
 [folders]
-"spam-idns"           = "https://hagezi-mirror.dnsbunker.org/controld/spam-idns-folder.json"
-"spam-tlds-allow"     = "https://hagezi-mirror.dnsbunker.org/controld/spam-tlds-allow-folder.json"
-"spam-tlds-combined"  = "https://hagezi-mirror.dnsbunker.org/controld/spam-tlds-combined-folder.json"
+"spam-idns"           = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-idns-folder.json"
+"spam-tlds-allow"     = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-allow-folder.json"
+"spam-tlds-combined"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-combined-folder.json"
 
 # =============================================================================
 # PROFILE → FOLDER MAPPINGS
