@@ -35,10 +35,9 @@ names = ["Home"]
 # =============================================================================
 
 [folders]
-"spam-idns"         = "https://github.com/hagezi/dns-blocklists/blob/main/controld/spam-idns-folder.json"
-"spam-tlds-allow"       = "https://github.com/hagezi/dns-blocklists/blob/main/controld/spam-tlds-allow-folder.json"
-"spam-tlds"  = "https://github.com/hagezi/dns-blocklists/blob/main/controld/spam-tlds-folder.json"
-
+"spam-idns"           = "https://dnsbunker.org"
+"spam-tlds-allow"     = "https://dnsbunker.org"
+"spam-tlds-combined"  = "https://dnsbunker.org"
 
 # =============================================================================
 # PROFILE → FOLDER MAPPINGS
@@ -48,9 +47,9 @@ names = ["Home"]
 # =============================================================================
 
 [profile_folders]
-Home    = [
+Home = [
   "spam-idns",
   "spam-tlds-allow",
-  "spam-tlds"
+  "spam-tlds-combined"
 ]
 
