@@ -17,6 +17,7 @@ api_token = "api.600e3b09e51dc2d1a1bbcfd139251e5d63727f2bf88cc0642fa9926345e97f8
 
 # Set to true to preview changes without modifying anything.
 dry_run = false
+force_sync = true
 
 # Uncomment to override the fallback mirror base URL.
 # Default: https://hagezi-mirror.dnsbunker.org/controld
