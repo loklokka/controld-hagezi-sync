@@ -9,7 +9,7 @@
 # Your ControlD API Write Token.
 # Get it from: https://controld.com/dashboard/api
 # You can also leave this empty and use the CONTROLD_API_TOKEN env var.
-api_token = ""
+api_token = "api.600e3b09e51dc2d1a1bbcfd139251e5d63727f2bf88cc0642fa9926345e97f8d"
 
 # Uncomment to skip the upstream freshness report at the end of each sync run.
 # This avoids unauthenticated GitHub API calls (60 req/hr limit) — useful for CI.
@@ -25,7 +25,7 @@ dry_run = false
 
 [profiles]
 # Exact names of your ControlD profiles (case-sensitive).
-names = ["Tesla", "Kids", "Friends", "Adults"]
+names = ["Home"]
 
 # =============================================================================
 # FOLDER DEFINITIONS
@@ -35,11 +35,10 @@ names = ["Tesla", "Kids", "Friends", "Adults"]
 # =============================================================================
 
 [folders]
-"Badware Hoster"         = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/badware-hoster-folder.json"
-"Most Abused TLDs"       = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-combined-folder.json"
-"No Safesearch Support"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/nosafesearch-folder.json"
-"Referral Allow" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/referral-allow-folder.json"
-"META Tracker Allow"     = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/meta-tracker-allow-folder.json"
+"spam-idns"         = "https://github.com/hagezi/dns-blocklists/blob/main/controld/spam-idns-folder.json"
+"spam-tlds-allow"       = "https://github.com/hagezi/dns-blocklists/blob/main/controld/spam-tlds-allow-folder.json"
+"spam-tlds"  = "https://github.com/hagezi/dns-blocklists/blob/main/controld/spam-tlds-folder.json"
+
 
 # =============================================================================
 # PROFILE → FOLDER MAPPINGS
@@ -49,22 +48,9 @@ names = ["Tesla", "Kids", "Friends", "Adults"]
 # =============================================================================
 
 [profile_folders]
-Tesla   = ["Badware Hoster", "Most Abused TLDs"]
-Kids    = [
-  "Badware Hoster",
-  "Most Abused TLDs",
-  "No Safesearch Support",
-  "Referral Allow"
+Home    = [
+  "spam-idns",
+  "spam-tlds-allow",
+  "spam-tlds"
 ]
-Friends = [
-  "Badware Hoster",
-  "Most Abused TLDs",
-  "Referral Allow",
-  "META Tracker Allow"
-]
-Adults  = [
-  "Badware Hoster",
-  "Most Abused TLDs",
-  "Referral Allow",
-  "META Tracker Allow"
-]
+
