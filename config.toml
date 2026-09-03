@@ -36,6 +36,7 @@ names = ["Home"]
 
 [folders]
 "spam-tlds-combined"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-combined-folder.json"
+"badware-hoster-folder"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/badware-hoster-folder.json"
 "apple-private-relay-allow"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/apple-private-relay-allow-folder.json"
 
 # =============================================================================
@@ -48,6 +49,7 @@ names = ["Home"]
 [profile_folders]
 Home = [
   "spam-tlds-combined",
+  "badware-hoster-folder",
   "apple-private-relay-allow"
 ]
 
